@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script> 
+        <script src = "assets/js/script.js"></script>
+    </head>
+    <body>
+
+        <!-- Sidebar Toggle -->
+        <div id = "sidebar-button">
+            <a id = "nav-toggle">
+                <span></span>
+            </a>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class = "sidebar-container">
+            <ul>
+            <a href = "#video-section">
+            <li class = "sidebar-item">Home</li>
+            </a>
+            <a href = "#aboutme-section">
+            <li class = "sidebar-item">About me</li>
+            </a>
+            <a href = "#gallery-section">
+            <li class = "sidebar-item">Gallery</li>
+            </a>
+            <a href = "#contact-section">
+            <li class = "sidebar-item">Contact</li>
+            </a>
+            </ul>
+        </nav>
+
+        <!-- Page Wrapper, Consisting of All the Sections -->
+        <div class = "page-wrapper">
+
+            <!-- Video Section -->
+            <div class = "text" id = "text-video-section">My name is Vincent Sun</div>
+            <section class = "section" id = "video-section">
+                <div id = "video-overlay"></div>
+                <video loop autoplay muted poster = "assets/img/poster.png" id = "video">
+                    <source src = "assets/video/room.webm" type = "video/webm">
+                    <source src = "assets/video/room.mp4" type = "video/mp4">
+                    <source src = "assets/video/room.ogg" type = "video/ogg">
+                </video>
+            </section>
+
+            <!-- About Me -->
+            <section class = "section" id = "aboutme-section">
+                <div class = "text" id = "text-aboutme-section">I was born in Vancouver, Canada.</div>
+            </section>
+
+            <!-- Gallery -->
+            <section class = "section" id = "gallery-section"> 
+                <div class = "text" id = "text-gallery-section">I sometimes dabble in graphic arts.</div>
+                <div class = "gallery-container">
+                <div id = "gallery">
+                    <div class = "gallery-item">
+                        <img src="assets/img/gallery1.jpg" id = "gallery1"></img>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src="assets/img/gallery2.jpg" id = "gallery2"></img>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src="assets/img/gallery3.png" id = "gallery3"></img>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src="assets/img/gallery4.jpg" id = "gallery4"></img>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src="assets/img/gallery5.jpg" id = "gallery5"></img>
+                    </div>
+                </div>
+
+                    <div id="gallery-prev">
+                        <img class="img-scaled" src="assets/img/arrowleft.png" />
+                    </div>
+                    <div id="gallery-next">
+                        <img class="img-scaled" src="assets/img/arrowright.png" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Me -->
+
+            <section class = "section" id = "contact-section">
+                <div class = "contact">Contact Me</div>
+
+                <!-- Contact Box -->
+                <div id = "contact-container">
+                    <div id = "contact-overlay"></div>
+                        <div id = "contact-box">
+                            <!-- Contact Box Content -->
+                            <div id = "contact-header">Contact me</div>
+                            <div id = "contact-content">
+                            <input type = "text" class = "account" placeholder = "Enter Full Name"/>
+                            <input type = "text" class = "account" placeholder = "Enter Email address"/>
+                            </div>
+                            <div id = "contact-footer">
+                            <div class = "button">Submit</div>
+                            <div class = "button">Cancel</div>
+                            </div>
+                        </div>
+                </div>
+            </section>>
+
+        </div>
+    </body>
+</html>
